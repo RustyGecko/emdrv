@@ -1,0 +1,29 @@
+[package]
+
+name = "emdrv"
+version = "0.0.1"
+authors = ["Håvard Wormdal Høiby <havardwhoiby@gmail.com>"]
+
+description = "Bindings for emdrv"
+repository = "https://github.com/RustyGecko/emdrv"
+
+keywords = ["emdrv", "bindings"]
+
+build = "build/emdrv.rs"
+
+[features]
+stk3700 = []
+dk3750 = []
+
+[build-dependencies.gcc]
+git = "https://github.com/sondrele/gcc-rs.git"
+
+[target.thumbv7m-none-eabi.dependencies.cmsis]
+git = "https://github.com/RustyGecko/cmsis.git"
+
+[target.thumbv7m-none-eabi.dependencies.emlib]
+git = "https://github.com/RustyGecko/emlib.git"
+features = ["stk3700"]
+
+[target.thumbv7m-none-eabi.dependencies.core]
+git = "https://github.com/RustyGecko/rust-core.git"
