@@ -1,4 +1,4 @@
-use i2c;
+use emlib::i2c;
 
 pub fn init(init: &i2c::Init) {
     unsafe { I2C1DRV_Init(init) }

@@ -1,5 +1,5 @@
 use cmsis::nvic;
-use {gpio, irq};
+use emlib::{gpio, irq};
 use core::prelude::*;
 
 pub type IrqCallback = fn (u8);

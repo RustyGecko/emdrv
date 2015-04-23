@@ -1,4 +1,4 @@
-use ebi::TFTInit;
+use emlib::ebi::TFTInit;
 
 pub fn direct_init(tft_init: &TFTInit) -> bool {
     unsafe { TFT_DirectInit(tft_init) }
