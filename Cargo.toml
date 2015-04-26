@@ -15,6 +15,9 @@ build = "build/emdrv.rs"
 stk3700 = []
 dk3750 = []
 
+[build-dependencies]
+submodules = "0.1"
+
 [build-dependencies.gcc]
 git = "https://github.com/sondrele/gcc-rs.git"
 

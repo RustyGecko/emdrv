@@ -1,4 +1,5 @@
 extern crate gcc;
+extern crate submodules;
 
 use gcc::Config;
 
@@ -12,6 +13,9 @@ use std::env;
 #[cfg(feature = "stk3700")] mod stk3700;
 
 fn main() {
+    submodules::update()
+        .init()
+        .run();
 
     let out_dir = env::var("OUT_DIR").unwrap();
 
