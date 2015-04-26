@@ -6,5 +6,5 @@ before_script:
   - sudo apt-get install gcc-arm-none-eabi
 
 script:
-    - cargo build --target thumbv7m-none-eabi
+    - cargo build --target thumbv7m-none-eabi --features stk3700
 
