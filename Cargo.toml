@@ -12,8 +12,8 @@ keywords = ["emdrv", "bindings"]
 build = "build/emdrv.rs"
 
 [features]
-stk3700 = []
-dk3750 = []
+stk3700 = ["emlib/stk3700"]
+dk3750 = ["emlib/dk3750"]
 
 [build-dependencies]
 submodules = "0.1"
@@ -26,7 +26,6 @@ git = "https://github.com/RustyGecko/cmsis.git"
 
 [target.thumbv7m-none-eabi.dependencies.emlib]
 git = "https://github.com/RustyGecko/emlib.git"
-features = ["stk3700"]
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
