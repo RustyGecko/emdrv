@@ -7,4 +7,5 @@ before_script:
 
 script:
     - cargo build --target thumbv7m-none-eabi --features stk3700
+    - cargo build --target thumbv7m-none-eabi --features dk3750
 
