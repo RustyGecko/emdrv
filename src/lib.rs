@@ -5,6 +5,7 @@
 
 #[macro_use]
 extern crate core;
+extern crate startup;
 
 extern crate cmsis;
 extern crate emlib;
