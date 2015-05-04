@@ -12,8 +12,8 @@ keywords = ["emdrv", "bindings"]
 build = "build/emdrv.rs"
 
 [features]
-stk3700 = ["modules/stk3700"]
-dk3750 = ["modules/dk3750"]
+stk3700 = []
+dk3750 = []
 
 [build-dependencies]
 submodules = "0.1"
@@ -21,8 +21,6 @@ submodules = "0.1"
 [build-dependencies.gcc]
 git = "https://github.com/sondrele/gcc-rs.git"
 
-[target.thumbv7m-none-eabi.dependencies.modules]
-git = "https://github.com/RustyGecko/modules.git"
 
 [target.thumbv7m-none-eabi.dependencies.cmsis]
 git = "https://github.com/RustyGecko/cmsis.git"
