@@ -9,6 +9,7 @@ extern crate core;
 extern crate cmsis;
 extern crate emlib;
 
+pub mod dmactrl;
 pub mod gpioint;
 pub mod flash;
 pub mod tft;

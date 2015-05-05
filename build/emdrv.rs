@@ -51,8 +51,9 @@ fn common_config(config: &mut Config) -> &mut Config {
         .include("efm32-common/kits/common/bsp")
         .include("efm32-common/kits/common/drivers")
 
-        .file("efm32-common/kits/common/drivers/nandflash.c")
+        .file("src/dmactrl.c")
         .file("efm32-common/kits/common/drivers/dmactrl.c")
+        .file("efm32-common/kits/common/drivers/nandflash.c")
         .file("efm32-common/kits/common/drivers/retargetio.c")
 
 }

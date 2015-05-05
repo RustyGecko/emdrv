@@ -21,7 +21,6 @@ submodules = "0.1"
 [build-dependencies.gcc]
 git = "https://github.com/sondrele/gcc-rs.git"
 
-
 [target.thumbv7m-none-eabi.dependencies.cmsis]
 git = "https://github.com/RustyGecko/cmsis.git"
 
