@@ -17,8 +17,6 @@ fn main() {
         .init()
         .run();
 
-    let out_dir = env::var("OUT_DIR").unwrap();
-
     println!("The ARM embedded toolchain must be available in the PATH");
     env::set_var("CC", "arm-none-eabi-gcc");
     env::set_var("AR", "arm-none-eabi-ar");
@@ -29,10 +27,6 @@ fn main() {
     kit::kit_config(&mut config);
 
     config.compile("libemdrv.a");
-
-    println!("cargo:rustc-link-search=native={}", out_dir);
-    println!("cargo:rustc-link-lib=static=emdrv");
-
 }
 
 fn common_config(config: &mut Config) -> &mut Config {
