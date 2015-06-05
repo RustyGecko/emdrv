@@ -1,6 +1,4 @@
 #![no_std]
-#![crate_type="lib"]
-#![crate_name="emdrv"]
 #![feature(asm, core, no_std)]
 
 #[macro_use]
