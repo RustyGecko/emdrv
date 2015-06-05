@@ -43,6 +43,9 @@ fn common_config(config: &mut Config) -> &mut Config {
         .flag("-Wall")
         .flag("-mcpu=cortex-m3")
         .flag("-mthumb")
+        .flag("-fno-builtin")
+        .flag("-ffunction-sections")
+        .flag("-fdata-sections")
 
         .include("src")
         .include("efm32-common/CMSIS/Include")
